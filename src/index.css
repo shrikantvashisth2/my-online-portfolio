@@ -1,0 +1,46 @@
+/* src/index.css or your main entry CSS file */
+@import "tailwindcss"; /* Use @tailwind directives if you haven't set up PostCSS import */
+
+
+@layer utilities {
+
+  /* REMOVE or COMMENT OUT the car bounce if not desired for dinosaur */
+  /* @keyframes carIdleBounce { ... } */
+  /* .animate-carIdleBounce { ... } */
+
+  .text-shadow { text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); }
+  .text-shadow-sm { text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); }
+  .text-shadow-md { text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6); }
+
+  /* Custom Scrollbar (remains useful if you add scrollable elements) */
+  .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.08); border-radius: 3px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.35); border-radius: 3px; border: 1px solid transparent; background-clip: content-box; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 0.5); }
+  .custom-scrollbar { scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.08); }
+
+  /* Twinkle animation for stars */
+  @keyframes twinkle {
+      0%, 100% { opacity: var(--star-min-opacity, 0.2); transform: scale(0.95); }
+      50% { opacity: var(--star-max-opacity, 0.8); transform: scale(1.05); }
+  }
+  .animate-twinkle { animation: twinkle var(--twinkle-duration, 6s) infinite ease-in-out alternate; }
+
+   /* Pulse animation (can be used elsewhere if needed) */
+   @keyframes pulse-bright {
+     0%, 100% { filter: brightness(1); }
+     50% { filter: brightness(1.3); }
+   }
+   .animate-pulse-bright { animation: pulse-bright 1.5s infinite ease-in-out; }
+
+} /* End of @layer utilities */
+
+/* Ensure body/html basics */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: white;
+    font-family: sans-serif;
+}
