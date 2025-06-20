@@ -684,11 +684,11 @@ export default function PortfolioCarGame() {
     const sections = {
         'intro': {
             title: 'Welcome!', icon: <PlayCircle size={20} className="text-teal-300" />,
-            contentTitle: "Sunny Anand", contentSubtitle: "Interactive Portfolio", contentAction: "Run → to Explore", // Changed 'Drive' to 'Run'
+            contentTitle: "Shrikant Vashisth", contentSubtitle: "Interactive Portfolio", contentAction: "Run → to Explore", // Changed 'Drive' to 'Run'
         },
         'about': {
             title: 'About Me', icon: <User size={20} className="text-sky-300" />,
-            profilePictureUrl: '/profile.jpeg', // <-- IMPORTANT: Replace with your image path (e.g., /profile.jpg in public folder)
+            profilePictureUrl: '/Screenshot_20250619-225748 (1).jpg', // <-- IMPORTANT: Replace with your image path (e.g., /profile.jpg in public folder)
             content: `Full-Stack Developer with a strong focus on AI integration, Machine Learning, and Deep Learning using PyTorch and TensorFlow. Proficient in the MERN stack and Python, I build scalable, intelligent applications across web and backend systems. I also specialize in game development using Unity/C#, blending technical expertise with creativity to craft immersive experiences. Passionate about innovation, AI ethics, and user-centric design, I aim to create impactful tech solutions that solve real-world problems.. Let's build something amazing together!`,
         },
         'skills': {
@@ -696,23 +696,23 @@ export default function PortfolioCarGame() {
             items: [
                 // Frontend
                 { id: 'sk1', label: 'React / Next.js', description: 'Proficient (UI/UX, State Mgmt)', icon: <Zap size={18} className="text-sky-400"/> },
-                { id: 'sk7', label: 'Tailwind CSS / CSS3', description: 'Proficient (Responsive Design)', icon: <Zap size={18} className="text-teal-400"/> },
+                
                 { id: 'sk4', label: 'JavaScript / TypeScript', description: 'Proficient (ES6+, Async)', icon: <Zap size={18} className="text-yellow-400"/> },
                 { id: 'sk11', label: 'HTML5', description: 'Proficient (Semantic Markup)', icon: <Code size={18} className="text-orange-400"/> },
                 // Backend
                 { id: 'sk2', label: 'Node.js / Express.js', description: 'Proficient (APIs, Middleware)', icon: <Zap size={18} className="text-green-400"/> },
-                { id: 'sk3', label: 'MongoDB / Mongoose', description: 'Proficient (NoSQL DB Design)', icon: <Database size={18} className="text-lime-400"/> },
-                { id: 'sk12', label: 'REST APIs / GraphQL', description: 'Experienced (API Design)', icon: <Zap size={18} className="text-violet-400"/> },
+                
+                { id: 'sk12', label: 'MySql', description: 'Experienced (API Design)', icon: <Zap size={18} className="text-violet-400"/> },
                 // AI/ML
                 { id: 'sk5', label: 'Python', description: 'Proficient (Scripting, Data)', icon: <Zap size={18} className="text-blue-400"/> },
                 { id: 'sk6', label: 'Generative AI', description: 'Experienced (LLMs, LangChain)', icon: <Zap size={18} className="text-purple-400"/> },
                 { id: 'sk13', label: 'PyTorch', description: 'Familiar (Deep Learning Models)', icon: <Zap size={18} className="text-red-400"/> },
                 // Game Dev
-                { id: 'sk9', label: 'Unity / C#', description: 'Experienced (Mobile Games)', icon: <Zap size={18} className="text-gray-400"/> },
+                { id: 'sk9', label: 'Developing app', description: 'Experienced (Mobile Games)', icon: <Zap size={18} className="text-gray-400"/> },
                  // DevOps / Cloud / Tools
-                { id: 'sk8', label: 'AWS Basics', description: 'Familiar (EC2, S3, Lambda)', icon: <Cloud size={18} className="text-orange-500"/> },
+                { id: 'sk8', label: 'Office suite', description: 'Familiar (ms word, ppt, wordpad)', icon: <Cloud size={18} className="text-orange-500"/> },
                 { id: 'sk10', label: 'Git / GitHub', description: 'Proficient (Version Control)', icon: <Gift size={18} className="text-red-500"/> }, // Changed icon slightly
-                { id: 'sk14', label: 'Docker Basics', description: 'Familiar (Containerization)', icon: <Construction size={18} className="text-cyan-400"/> }, // New Tool
+               
                 { id: 'sk15', label: 'Figma', description: 'Familiar (UI Design/Prototyping)', icon: <Zap size={18} className="text-pink-400"/> }, // New Design Tool
             ]
         },
@@ -721,19 +721,20 @@ export default function PortfolioCarGame() {
             title: 'Projects', icon: <Briefcase size={20} className="text-amber-300" />, type: 'list',
             // NOTE: Image URLs assume images are DIRECTLY in your /public/ folder
             items: [
-                { id: 'p1', label: 'SanskritAI', description: 'AI Tutor for Sanskrit (5k+ Users, Next.js, OpenAI)', icon: <Target size={18} className="text-amber-400"/>, imageUrl: '/sanskritai.jpeg' },
-                { id: 'p2', label: 'DivineWall', description: 'AI Wallpaper Generator (8k+ Users, React Native, GenAI)', icon: <Target size={18} className="text-orange-400"/>, imageUrl: '/divinewall.jpeg' },
+                { id: 'p1', label: 'Ticket Booking App – UI/UX Design', description: 'Designed a modern and user-friendly ticket booking app using Figma, focusing on seamless user flow and intuitive interface.', icon: <Target size={18} className="text-amber-400"/>, imageUrl: '/figma.png' },
+                { id: 'p2', label: 'Scientific Calculator', description: 'Created a scientific calculator using Python libraries and HTML for advanced calculations.', icon: <Target size={18} className="text-orange-400"/>, imageUrl: '/calculator.png' },
                 { id: 'p3', label: 'MyResearchPaper', description: 'AI Research Paper Generator (MERN, AI Integration)', icon: <Target size={18} className="text-yellow-400"/>, imageUrl: '/myresearchpaper.jpeg' },
-                { id: 'p4', label: 'Zombie Alien Game', description: 'Mobile Hypercasual Game (25k+ Players, Unity, C#)', icon: <Target size={18} className="text-lime-400"/>, imageUrl: '/zombiegame.jpg' },
-                { id: 'p5', label: 'Auto Express Game', description: 'Mobile Game (Unity, C#)', icon: <Target size={18} className="text-green-400"/>, imageUrl: '/autoexpress.jpg' }
+                { id: 'p4', label: 'EduFocus App', description: 'Developed a productivity-focused student app in Kotlin with features like task management, timer, and progress tracking.', icon: <Target size={18} className="text-lime-400"/>, imageUrl: '/edufocus.png' },
+                { id: 'p5', label: 'Student Marks pridiction - Machine Learning', description: ' pridiction students marks for future on the basis of time table(Python)', icon: <Target size={18} className="text-green-400"/>, imageUrl: '/marks.png' }
             ]
          },
        
         'certifications': {
             title: 'Certifications', icon: <BadgeCheck size={20} className="text-cyan-300" />, type: 'list',
             items: [
-                { id: 'ce1', label: 'Full-Stack Web Dev', description: 'Udemy (MERN Focus, 2023)', icon: <BadgeCheck size={18} className="text-cyan-400"/> },
-                { id: 'ce2', label: 'Python', description: 'Udemy (Specialization, 2022)', icon: <BadgeCheck size={18} className="text-sky-400"/> },
+                { id: 'ce1', label: 'Programming In c++', description: 'Coursera (Dec, 2024)', icon: <BadgeCheck size={18} className="text-cyan-400"/> },
+                { id: 'ce2', label: 'Static Routing Configuration Using Packet Tracer', description: 'Corsera (Nov,2023)', icon: <BadgeCheck size={18} className="text-sky-400"/> },
+                { id: 'ce2', label: 'Cloud Computing', description: 'Nptel (Dec,2024)', icon: <BadgeCheck size={18} className="text-sky-400"/> },
                 { id: 'ce3', label: 'Data Structure and Algorithm', description: 'Udemy (Abdul Bari)', icon: <BadgeCheck size={18} className="text-blue-400"/> },
             ]
         },
@@ -741,15 +742,15 @@ export default function PortfolioCarGame() {
             title: 'Education', icon: <GraduationCap size={20} className="text-rose-300" />, type: 'list',
             items: [
                 { id: 'ed1', label: 'B.Tech CSE', description: 'Lovely Professional University (2022-2026). Focus on AI & Software Engg.', icon: <BookOpen size={18} className="text-rose-400"/> },
-                { id: 'ed2', label: 'Intermediate', description: 'SKP Vidya Vihar ', icon: <BookOpen size={18} className="text-rose-400"/> },
-                { id: 'ed3', label: 'Matriculation', description: 'Holy Family School', icon: <BookOpen size={18} className="text-rose-400"/> } // Corrected id
+                { id: 'ed2', label: 'Intermediate', description: 'SND Public School ', icon: <BookOpen size={18} className="text-rose-400"/> },
+                { id: 'ed3', label: 'Matriculation', description: 'KM Public School', icon: <BookOpen size={18} className="text-rose-400"/> } // Corrected id
             ]
         },
         'resume': {
             title: 'Download Resume',
             icon: <Download size={20} className="text-green-300" />,
             type: 'resumeDownload',
-            resumeUrl: '/Resume.pdf',
+            resumeUrl: '/generalise cv.pdf',
             linkText: 'Download Resume',
         },
         'contact': {
@@ -757,10 +758,10 @@ export default function PortfolioCarGame() {
             icon: <Mail size={20} className="text-purple-300" />,
             type: 'contact',
             details: [
-                { id: 'email', label: 'asunny583@gmail.com', href: 'mailto:asunny583@gmail.com', icon: <Mail size={18} className="text-purple-400"/> },
-                { id: 'linkedin', label: 'Sunny Anand', href: 'https://www.linkedin.com/in/sunny-anand-/', icon: <Linkedin size={18} className="text-blue-400"/> },
-                { id: 'github', label: 'ANANDSUNNY0899', href: 'https://github.com/ANANDSUNNY0899', icon: <Github size={18} className="text-gray-400"/> },
-                { id: 'phone', label: '+91-6207297112', icon: <Phone size={18} className="text-green-400"/> },
+                { id: 'email', label: 'shrikantvashisth2@gmail.com', href: 'mailto:asunny583@gmail.com', icon: <Mail size={18} className="text-purple-400"/> },
+                { id: 'linkedin', label: 'Shrikant Vashisth', href: 'https://www.linkedin.com/in/shrikant-vashisth/', icon: <Linkedin size={18} className="text-blue-400"/> },
+                { id: 'github', label: 'shrikantvashisth2', href: 'https://github.com/shrikantvashisth2', icon: <Github size={18} className="text-gray-400"/> },
+                { id: 'phone', label: '+91-8930722820', icon: <Phone size={18} className="text-green-400"/> },
             ]
         },
     };
